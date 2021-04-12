@@ -36,7 +36,7 @@ i.main-icon:hover {
 .underline-text {
     text-decoration: underline;
     text-decoration-color: var(--light-primary-color);
-    text-shadow: 2px 1px 0px #7eca9c;
+    text-shadow: 2px 1px 0px var(--light-primary-color);
 }
 
 .thumbnail-img {
@@ -82,6 +82,16 @@ i.main-icon:hover {
     background-color: var(--light-primary-color);
     transform: scale(1.05);
     border: 1px solid var(--dark-primary-color);
+}
+
+
+.btn-dark-secondary:hover i{
+    color: black;
+    background-color: var(--light-primary-color);
+}
+
+.logo {
+    text-shadow: 2px 1px 0px var(--light-primary-color);
 }
 
 .nav-link {
@@ -161,6 +171,11 @@ i.about-icon, svg.about-icon {
 
 .project-card-header {
     margin-bottom: auto;
+}
+
+.modal-body img {
+    object-fit: cover;
+
 }
 
 .tags {

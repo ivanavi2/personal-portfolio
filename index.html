@@ -16,19 +16,20 @@
     <body>
       <nav class="navbar sticky-top navbar-expand-lg navbar-dark px-3">
           <div class="container-fluid">
-          <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 me-4 mb-lg-0">
-              <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#projects">Projects</a>
-              </li>
-              </ul>
-          </div>
+            <a class="navbar-brand logo" href="/">i</a>
+            <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 me-4 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                </ul>
+            </div>
           </div>
       </nav>
       <main class="p-3">
@@ -75,16 +76,17 @@
       <section class="container-fluid p-5">
           <h1 class="text-decoration-underline lh-1 section-heading" id="projects">Projects</h1>
           <div class="card-list d-flex pt-3">
-              <article class="project-card">
-                  <header class="project-card-header">
-                    <h2>Food Delivery App</h2>
-                    <p>- Features includes user authentication/authorization,
-                      item cart, food order status tracking, managing menu for sellers, viewing and searching stores for customers
-                      , etc.</p>
-                    <p>- Built using Node.js, MongoDB, Express.js, ejs and deployed with Heroku.</p>
-                    <a href="https://powerful-everglades-25382.herokuapp.com/"><button type="button" class="btn btn-dark-secondary btn-lg main-button">>Demo</button></a>
-                    <a href="https://github.com/ivanavi2/hf-delivery-app"><button type="button" class="btn btn-dark-secondary btn-lg main-button">>Github</button></a>
-                  </header>
+                <article class="project-card">
+                    <header class="project-card-header">
+                        <h2>Food Delivery App</h2>
+                        <p>- Features includes user authentication/authorization,
+                        item cart, food order status tracking, managing menu for sellers, viewing and searching stores for customers
+                        , etc.</p>
+                        <p>- Built using Node.js, MongoDB, Express.js, ejs and deployed with Heroku.</p>
+                        <a href="https://powerful-everglades-25382.herokuapp.com/"><button type="button" class="btn btn-dark-secondary btn-lg">>Demo</button></a>
+                        <a href="https://github.com/ivanavi2/hf-delivery-app"><button type="button" class="btn btn-dark-secondary btn-lg">>Github</button></a>
+                        <button type="button" class="btn btn-dark-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-deliveryapp"><i class="fas fa-images"></i></button>
+                    </header>
                   <div class="tags">
                     <i>express.js</i>
                     <i>mongodb</i>
@@ -97,8 +99,8 @@
                     <p>- Personal project built with Flutter to learn more about the framework such as widgets available in the
                       framework, state management, page navigation, handling and validating user inputs.</p>
                     <p>- Firebase is used to store data from the app</p>
-                    <a href="#"><button type="button" class="btn btn-dark-secondary btn-lg main-button">>Demo</button></a>
-                    <a href=#"><button type="button" class="btn btn-dark-secondary btn-lg main-button">>Github</button></a>
+                    <a href="https://github.com/ivanavi2/shop_app"><button type="button" class="btn btn-dark-secondary btn-lg">>Github</button></a>
+                    <button type="button" class="btn btn-dark-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#modal-shoppingapp"><i class="fas fa-images"></i></button>
                   </header>
                   <div class="tags">
                     <i href="#">Flutter</i>
@@ -107,5 +109,42 @@
                 </article>
           </div>
       </section>
+
+      <!--Modal for project images-->
+      <div class="modal fade" id="modal-deliveryapp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Preview</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid" src="/img/preview-deliveryrapp.JPG" alt="">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modal-shoppingapp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Preview</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-fluid p-2" src="/img/preview-shopapp1.JPG" alt="">
+                <img class="img-fluid p-2" src="/img/preview-shopapp2.JPG" alt="">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </body>
 </html>
