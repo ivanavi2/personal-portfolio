@@ -33,8 +33,8 @@ const Main = () => {
             className="p-4 fs-2"
             ref={typeWriterRef}></span>
           <h1 className="p-4 text-sm-center fw-bold main-text">
-            Currently a 4th year software engineering student from Universiti
-            Teknologi Malaysia
+            A Software Engineering fresh graduate from Universiti Teknologi
+            Malaysia
           </h1>
 
           <a href="mailto:guang@graduate.utm.my">

@@ -1,5 +1,21 @@
 const projectList = [
   {
+    title: "Allowance Management Module for PEIA System",
+    descriptions: [
+      `Final year project with Johor Education Department or Jabatan Pendidikan Negeri Johor (JPNJ) as the stakeholder to
+      improve on the features provided by the existing Public Exam Invigilator Appointment system`,
+      ` Features of the application includes user authentication, dashboard view, automatic calculation of eligible allowance,
+      email notifications, export PDF and excel report and address autocomplete`,
+      `Built using Node.js, MongoDB, Express.js, React.js and deployed with Netlify and Heroku`,
+    ],
+    isDemoAvailable: true,
+    url: "https://drive.google.com/file/d/1pVxMaa3n1u9GnDSGP7aOt2ocTPMD_usu/view?usp=sharing",
+    githubUrl: "https://github.com/ivanavi2/peia-allowance-frontend",
+    modalTargetName: "",
+    technologies: ["react.js", "express.js", "mongodb"],
+    imagePaths: [],
+  },
+  {
     title: "Spot A Song dApp",
     descriptions: [
       `A simple dApp where users can recommend, find songs and stand a chance to be rewarded with some ether`,

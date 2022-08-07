@@ -40,13 +40,15 @@ const ProjectItem = ({
               {">GitHub"}
             </button>
           </a>
-          <button
-            type="button"
-            className="btn btn-dark-secondary btn-lg mx-1"
-            data-bs-toggle="modal"
-            data-bs-target={modalTargetName}>
-            <i className="fas fa-images"></i>
-          </button>
+          {modalTargetName && (
+            <button
+              type="button"
+              className="btn btn-dark-secondary btn-lg mx-1"
+              data-bs-toggle="modal"
+              data-bs-target={modalTargetName}>
+              <i className="fas fa-images"></i>
+            </button>
+          )}
         </header>
         <div className="tags">{displayTags()}</div>
       </article>

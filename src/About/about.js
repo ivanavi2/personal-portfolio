@@ -7,19 +7,19 @@ const About = () => {
       <div className="row">
         <div className="col-sm-6 border-white" id="about-1">
           <p className="fs-4">
-            I am a 4th year software engineering student from Penang, Malaysia,
-            with interests in web development as well as application development
-            especially front-end and design wise. I am open and keen to learning
-            new technologies to grow and thrive as a software engineer.
+            I am a software engineering fresh graduate from Penang, Malaysia,
+            who is interested in full stack web development. I am open and keen
+            to learning new technologies to grow and thrive as a software
+            engineer.
           </p>
         </div>
         <div className="col-sm-6 ps-4-sm pt-3 pt-sm-0" id="about-2">
           <p className="fs-4">
-            On the path of learning the{" "}
-            <span className="underline-text">MERN stack</span> along with{" "}
-            <span className="underline-text">Flutter/Dart.</span>I have also
-            learnt Java and a little C++ in university. Other frameworks and
-            tools I am familiar with include Bootstrap, Heroku, Git/Github.
+            I mainly work with the{" "}
+            <span className="underline-text">MERN stack</span>. I have also
+            learnt Flutter/Dart, Java and a little C++ in university. Other
+            frameworks and tools I am familiar with include Bootstrap, Heroku,
+            Git/Github.
           </p>
           <i className="fab fa-node-js about-icon" style={{ "--order": 1 }}></i>
           <svg
