@@ -55,9 +55,7 @@ i.main-icon:hover {
   filter: saturate(110%);
 }
 
-.main-text,
-.main-button,
-.main-icon {
+.main-fade-in-text {
   animation: main-content-animation 1s ease-in;
 }
 
@@ -152,8 +150,7 @@ svg.about-icon {
 .card-list::-webkit-scrollbar-thumb {
   background: white;
   border-radius: 10px;
-  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
-    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .project-card {
@@ -228,6 +225,12 @@ svg.about-icon {
   margin: 0 0.2rem;
 }
 
+#about,
+#projects,
+#experience {
+  scroll-margin-block-start: 8rem;
+}
+
 @media (max-width: 576px) {
   #about-1 {
     border-right: none;
@@ -244,4 +247,95 @@ svg.about-icon {
   .frame {
     height: 100%;
   }
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-5 {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-5::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-5 {
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+}
+
+/* The circles on the timeline */
+.timeline-5::after {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  right: 1px;
+  background-color: white;
+  top: 18px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the right */
+.right-5 {
+  padding: 0px 0px 20px 40px;
+  left: auto;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-5::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid var(--light-primary-color);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent var(--light-primary-color) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-5::after {
+  left: -10px;
+}
+
+@media (max-width: 991px) {
+  .main-timeline-5 {
+    max-width: 100%;
+  }
+}
+
+.experience-body {
+  border-radius: 16px;
+  background-color: var(--light-primary-color);
+  box-shadow: -1rem 0 2rem var(--dark-primary-color);
+}
+
+.experience-body * {
+  color: black;
+  background-color: var(--light-primary-color);
+}
+
+.timeline-icon {
+  background-color: var(--light-primary-color);
+  color: var(--dark-primary-color);
+}
+
+a.certificate-item {
+  background-color: var(--light-primary-color);
+  box-shadow: -1rem 0 2rem var(--dark-primary-color);
+  color: black;
+  border-radius: 16px;
+  text-decoration: none;
 }
