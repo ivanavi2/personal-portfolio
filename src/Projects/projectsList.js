@@ -1,5 +1,19 @@
 const projectList = [
   {
+    title: "BentoBoxer - Visual Bento Grid Editor",
+    descriptions: [
+      `A free online drag-and-drop editor for creating stunning bento box grid layouts with intuitive visual interface`,
+      `Generates responsive CSS Grid and HTML code for modern web design, perfect for dashboards, portfolios, and user interfaces`,
+      `Built with Next.js and Claude Code as an opportunity to learn more about agentic coding assistants`,
+    ],
+    isDemoAvailable: true,
+    url: "https://bentoboxer.vercel.app/",
+    githubUrl: "https://github.com/ivanavi2/bentoboxer",
+    modalTargetName: "",
+    technologies: ["next.js", "css", "javascript"],
+    imagePaths: [],
+  },
+  {
     title: "Allowance Management Module for PEIA System",
     descriptions: [
       `Final year project with Johor Education Department or Jabatan Pendidikan Negeri Johor (JPNJ) as the stakeholder to
